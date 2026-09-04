@@ -24,3 +24,29 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+/* ==== Header & Navbar (Flexbox) ==== */
+header {
+    background-color: #1d5b8a;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-size: 1.4rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.25rem;
+}
+
+header nav a {
+    color: #fff;
+    font-weight: 500;
+}
