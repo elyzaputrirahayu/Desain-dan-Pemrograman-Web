@@ -2,3 +2,9 @@ header {
     background-color: #1d5b8a;
     color: #fff;
 }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

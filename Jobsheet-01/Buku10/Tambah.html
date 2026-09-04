@@ -3,80 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <title>SIMPUS-Mini | Tambah Buku</title>
-
-    <nav>
-        <ul>
-            <li><a href="../index.html">Beranda</a></li>
-            <li><a href="list.html">Daftar Buku</a></li>
-            <li><a href="tambah.html">Tambah Buku</a></li>
-            <li><a href="../anggota/list.html">Daftar Anggota</a></li>
-            <li><a href="../anggota/tambah.html">Tambah Anggota</a></li>
-        </ul>
-    </nav>
+    
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
-
 <body>
-    <form>
-        <p>
-            <label for="judul">Judul</label><br>
-            <input type="text" id="judul" name="judul" required>
-        </p>
+    <header>
+        <h1>SIMPUS-Mini</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Beranda</a></li>
+                <li><a href="list.html">Daftar Buku</a></li>
+                <li><a href="tambah.html">Tambah Buku</a></li>
+                <li><a href="../anggota/list.html">Daftar Anggota</a></li>
+                <li><a href="../anggota/tambah.html">Tambah Anggota</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <p>
-            <label for="pengarang">Pengarang</label><br>
-            <input type="text" id="pengarang" name="pengarang" required>
-        </p>
+    <main>
+        <section>
+            <h2>Tambah Data Buku</h2>
+            <form>
+                <p>
+                    <label for="judul">Judul</label><br>
+                    <input type="text" id="judul" name="judul" required>
+                </p>
 
-        <p>
-            <label for="tahun">Tahun Terbit</label><br>
-            <input type="number" id="tahun" name="tahun" min="1900" max="2026">
-        </p>
+                <p>
+                    <label for="pengarang">Pengarang</label><br>
+                    <input type="text" id="pengarang" name="pengarang" required>
+                </p>
 
-        <p>
-            <label for="isbn">ISBN</label><br>
-            <input type="text" id="isbn" name="isbn">
-        </p>
+                <p>
+                    <label for="tahun">Tahun Terbit</label><br>
+                    <input type="number" id="tahun" name="tahun" min="1900" max="2026" required>
+                </p>
 
-        <p>
-            <label for="stok">Stok</label>
-            <input type="number" id="stok" name="stok" min="0" required>
-        </p>
+                <p>
+                    <label for="isbn">ISBN</label><br>
+                    <input type="text" id="isbn" name="isbn">
+                </p>
 
-        <p>
-            <label for="kateogri">kateogri</label>
-            <select id="kateogri" name="kateogri">
-                <option value="fiksi">fiksi</option>
-                <option value="non-fiksi"></option>
-                <option value="referensi">referensi</option></select>
-        </p>
+                <p>
+                    <label for="stok">Stok</label><br>
+                    <input type="number" id="stok" name="stok" min="0" required>
+                </p>
 
-        <p>
-            <button type="submit">simpan</button>
-        </p>
+                <p>
+                    <label for="kategori">Kategori</label><br>
+                    <select id="kategori" name="kategori">
+                        <option value="fiksi">Fiksi</option>
+                        <option value="non-fiksi">Non-Fiksi</option>
+                        <option value="referensi">Referensi</option>
+                    </select>
+                </p>
 
-        <tr>
-            <td>Atomic Habits</td>
-            <td>James Clear</td>
-            <td>2018</td>
-            <td>5</td>
-            <td>
-                <button type="button">Edit</button>
-                <button type="button">Hapus</button>
-            </td>
-        </tr>
-        <p>
-        <tr>
-            <td>Filosofi Teras</td>
-            <td>Henry Manampiring</td>
-            <td>2018</td>
-            <td>2</td>
-            <td>
-                <button type="button">Edit</button>
-                <button type="button">Hapus</button>
-            </td>
-        </tr>
-        </p>
-    </form>
+                <p>
+                    <button type="submit">Simpan</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 SIMPUS-Mini - Jobsheet 1</p>
+    </footer>
 </body>
-
 </html>
