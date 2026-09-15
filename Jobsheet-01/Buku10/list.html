@@ -3,19 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>SIMPUS-Mini | Daftar Buku</title>
-    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="../assets/css/style.css">
-</head>
+    
 <body>
     <header>
         <h1>SIMPUS-Mini</h1>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">&#9776;</label>
         <nav>
             <ul>
                 <li><a href="../index.html">Beranda</a></li>
                 <li><a href="list.html">Daftar Buku</a></li>
                 <li><a href="tambah.html">Tambah Buku</a></li>
-                <li><a href="../anggota/list.html">Daftar Anggota</a></li>
-                <li><a href="../anggota/tambah.html">Tambah Anggota</a></li>
+                <li><a href="../anggota10/list.html">Daftar Anggota</a></li>
+                <li><a href="../anggota10/tambah.html">Tambah Anggota</a></li>
             </ul>
         </nav>
     </header>
@@ -23,6 +27,16 @@
     <main>
         <section>
             <h2>Daftar Buku</h2>
+            <div class="seacrh-box">
+                <label for="search-input">Cari Judul Buku</label>
+                <input type="text" id="search-input" placeholder="Ketik judul buku...">
+            </div>
+
+            <button type="button" id="btn-reload">Muat Ulang</button>
+
+            <p id="loading-indicator" style="display:none;">Memuat data...</p>
+            <p id="row-counter">Menampilkan 10 dari 10 buku</p>
+            <div class="table-responsive">
             <table>
                 <thead>
                     <tr>
@@ -30,87 +44,21 @@
                         <th>Pengarang</th>
                         <th>Tahun</th>
                         <th>Stok</th>
+                        <th>Kategori</th>
                         <th>Aksi</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>Laskar Pelangi</td>
-                        <td>Andrea Hirata</td>
-                        <td>2005</td>
-                        <td>4</td>
-                        <td>
-                            <button type="button">Edit</button>
-                            <button type="button">Hapus</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Bumi Manusia</td>
-                        <td>Pramoedya Ananta Toer</td>
-                        <td>1980</td>
-                        <td>3</td>
-                        <td>
-                            <button type="button">Edit</button>
-                            <button type="button">Hapus</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Hujan</td>
-                        <td>Tere Liye</td>
-                        <td>2016</td>
-                        <td>5</td>
-                        <td>
-                            <button type="button">Edit</button>
-                            <button type="button">Hapus</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Filosofi Teras</td>
-                        <td>Henry Manampiring</td>
-                        <td>2018</td>
-                        <td>2</td>
-                        <td>
-                            <button type="button">Edit</button>
-                            <button type="button">Hapus</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Laut Bercerita</td>
-                        <td>Leila S. Chudori</td>
-                        <td>2017</td>
-                        <td>6</td>
-                        <td>
-                            <button type="button">Edit</button>
-                            <button type="button">Hapus</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Atomic Habits</td>
-                        <td>James Clear</td>
-                        <td>2018</td>
-                        <td>5</td>
-                        <td>
-                            <button type="button">Edit</button>
-                            <button type="button">Hapus</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Cantik Itu Luka</td>
-                        <td>Eka Kurniawan</td>
-                        <td>2002</td>
-                        <td>3</td>
-                        <td>
-                            <button type="button">Edit</button>
-                            <button type="button">Hapus</button>
-                        </td>
-                    </tr>
+                    
                 </tbody>
             </table>
+            </div>
         </section>
     </main>
-
     <footer>
-        <p>© 2026 SIMPUS-Mini - Jobsheet 1</p>
+        <p>© 2026
     </footer>
+    <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/buku.js"></script>
 </body>
 </html>

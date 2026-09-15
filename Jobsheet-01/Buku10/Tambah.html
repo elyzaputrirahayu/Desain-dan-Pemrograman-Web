@@ -3,27 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>SIMPUS-Mini | Tambah Buku</title>
-    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/app.js"></script>
 </head>
 <body>
     <header>
         <h1>SIMPUS-Mini</h1>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">&#9776;</label>
         <nav>
             <ul>
                 <li><a href="../index.html">Beranda</a></li>
                 <li><a href="list.html">Daftar Buku</a></li>
                 <li><a href="tambah.html">Tambah Buku</a></li>
-                <li><a href="../anggota/list.html">Daftar Anggota</a></li>
-                <li><a href="../anggota/tambah.html">Tambah Anggota</a></li>
+                <li><a href="../anggota10/list.html">Daftar Anggota</a></li>
+                <li><a href="../anggota10/tambah.html">Tambah Anggota</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section>
-            <h2>Tambah Data Buku</h2>
-            <form>
+            <h2>Tambah Buku</h2>
+            <form id="form-tambah" novalidate>
                 <p>
                     <label for="judul">Judul</label><br>
                     <input type="text" id="judul" name="judul" required>
